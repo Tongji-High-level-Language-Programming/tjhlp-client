@@ -1,0 +1,30 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "msvc",
+            "displayName": "Visual Studio Community 2026 Release - amd64",
+            "description": "Using compilers for Visual Studio 18 2026",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_CXX_COMPILER": "cl.exe"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug",
+            "displayName": "Visual Studio Community 2026 Debug - amd64 - Debug",
+            "configurePreset": "msvc",
+            "configuration": "Debug"
+        },
+        {
+            "name": "release",
+            "displayName": "Visual Studio Community 2026 Release - amd64 - Release",
+            "configurePreset": "msvc",
+            "configuration": "Release"
+        }
+    ]
+}
