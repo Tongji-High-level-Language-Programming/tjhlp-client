@@ -4,5 +4,6 @@
     <file alias="index.html">../../client-ui/dist/index.html</file>
     <file alias="qwebchannel.js">../../client-ui/dist/qwebchannel.js</file>
     <file alias="assets/index.js">../../client-ui/dist/assets/index.js</file>
+    <file alias="assets/index.css">../../client-ui/dist/assets/index.css</file>
   </qresource>
 </RCC>
