@@ -1,5 +1,5 @@
 # build artifacts
-build/
+out/
 # clangd cache
 .cache/
 # vscode settings
